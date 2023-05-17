@@ -13,6 +13,7 @@ GPIO.setup(SW2,GPIO.IN,pull_up_down=GPIO.PUD_DOWN)
 GPIO.setup(SW3,GPIO.IN,pull_up_down=GPIO.PUD_DOWN)
 GPIO.setup(SW4,GPIO.IN,pull_up_down=GPIO.PUD_DOWN)
 
+# 스위치 값을 각 배열의 인덱스에 표현
 oldSw = [0,0,0,0]
 newSw = [0,0,0,0]
 cnt = [0,0,0,0]
