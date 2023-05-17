@@ -112,6 +112,11 @@ def main():
                 gData=' '
                 print('ok stop')
                 motor_stop()
+             
+            # 스위치 입력을 통한 비상정지 기능
+            if GPIO.input(SW1)==1 or GPIO.input(SW2) == 1 or GPIO.input(SW3) == 1 or GPIO.input(SW4) ==1:
+                motor_stop()
+                
     except KeyboardInterrupt:
         pass
 
